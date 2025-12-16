@@ -11,3 +11,8 @@ function filter(arr: number[], fn: Fn): number[] {
     }
     return filteredArr;
 };
+
+const arr = [0, 10, 20, 30];
+const fn = (n: number) => n > 10;
+const result = filter(arr, fn);
+console.log(result);
